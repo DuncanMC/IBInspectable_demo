@@ -1,25 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftTestProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wR-AV-Hws" userLabel="Container View">
+                                <rect key="frame" x="76" y="139" width="168" height="53"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WareTo icon 69x53" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-Po-zMe">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="4Vy-Oo-QDy"/>
+                                            <constraint firstAttribute="height" constant="53" id="Bk9-kJ-4D9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ti-sA-vbi">
+                                        <rect key="frame" x="74" y="16" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ibg-Po-zMe" firstAttribute="leading" secondItem="8wR-AV-Hws" secondAttribute="leading" id="5fA-gU-9S7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ibg-Po-zMe" secondAttribute="bottom" id="BUG-WV-onb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ibg-Po-zMe" secondAttribute="bottom" id="RSG-ds-FHC"/>
+                                    <constraint firstAttribute="trailing" secondItem="9ti-sA-vbi" secondAttribute="trailing" constant="5" id="Whm-4E-aGK"/>
+                                    <constraint firstItem="9ti-sA-vbi" firstAttribute="leading" secondItem="Ibg-Po-zMe" secondAttribute="trailing" constant="5" id="a8V-bo-urq"/>
+                                    <constraint firstItem="Ibg-Po-zMe" firstAttribute="centerY" secondItem="9ti-sA-vbi" secondAttribute="centerY" id="hG0-74-QLR"/>
+                                    <constraint firstItem="Ibg-Po-zMe" firstAttribute="top" secondItem="8wR-AV-Hws" secondAttribute="top" id="keM-Li-eaV"/>
+                                    <constraint firstItem="Ibg-Po-zMe" firstAttribute="top" secondItem="8wR-AV-Hws" secondAttribute="top" id="pO3-nr-7Xi"/>
+                                    <constraint firstAttribute="centerY" secondItem="Ibg-Po-zMe" secondAttribute="centerY" id="uiY-Ux-8Fz"/>
+                                    <constraint firstItem="9ti-sA-vbi" firstAttribute="leading" secondItem="Ibg-Po-zMe" secondAttribute="trailing" id="vPH-gG-bl6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.5" alpha="0.5" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RSG-ds-FHC"/>
+                                        <exclude reference="keM-Li-eaV"/>
+                                        <exclude reference="vPH-gG-bl6"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-9A-cVy">
+                                <rect key="frame" x="84" y="30" width="231" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9sp-Rw-B1k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="md5-TK-Hi2"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label text:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPZ-lh-K84">
+                                <rect key="frame" x="5" y="30" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5MU-9A-cVy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ELP-EG-Jjd"/>
+                            <constraint firstItem="5MU-9A-cVy" firstAttribute="centerY" secondItem="yPZ-lh-K84" secondAttribute="centerY" id="Nce-4s-mRP"/>
+                            <constraint firstItem="yPZ-lh-K84" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="e8g-jN-G8I"/>
+                            <constraint firstAttribute="centerX" secondItem="8wR-AV-Hws" secondAttribute="centerX" id="ewS-de-EEY"/>
+                            <constraint firstItem="5MU-9A-cVy" firstAttribute="leading" secondItem="yPZ-lh-K84" secondAttribute="trailing" constant="4" id="fEK-Wk-jRF"/>
+                            <constraint firstAttribute="centerY" secondItem="8wR-AV-Hws" secondAttribute="centerY" constant="75" id="jNi-Kc-IGq"/>
+                            <constraint firstAttribute="trailing" secondItem="5MU-9A-cVy" secondAttribute="trailing" constant="5" id="s8C-16-cLi"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="9ti-sA-vbi" id="6Hy-e3-Qdr"/>
+                        <outlet property="labelInputField" destination="5MU-9A-cVy" id="Q3z-BD-HR8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="WareTo icon 69x53" width="69" height="53"/>
+    </resources>
 </document>

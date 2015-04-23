@@ -13,6 +13,7 @@
 		AEBB6B861AE676740097B8A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBB6B851AE676740097B8A0 /* Images.xcassets */; };
 		AEBB6B891AE676740097B8A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEBB6B871AE676740097B8A0 /* LaunchScreen.xib */; };
 		AEBB6B951AE676740097B8A0 /* SwiftTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB6B941AE676740097B8A0 /* SwiftTestProjectTests.swift */; };
+		AED96A671AE9424500D1AA53 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED96A661AE9424500D1AA53 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		AEBB6B8E1AE676740097B8A0 /* SwiftTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBB6B931AE676740097B8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEBB6B941AE676740097B8A0 /* SwiftTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestProjectTests.swift; sourceTree = "<group>"; };
+		AED96A661AE9424500D1AA53 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		AED96A6A1AE9550900D1AA53 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		AED96A6B1AE9727000D1AA53 /* IBInspectable Demo screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IBInspectable Demo screenshot.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		AEBB6B7B1AE676740097B8A0 /* SwiftTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				AED96A661AE9424500D1AA53 /* UIViewExtensions.swift */,
 				AEBB6B7E1AE676740097B8A0 /* AppDelegate.swift */,
 				AEBB6B801AE676740097B8A0 /* ViewController.swift */,
 				AEBB6B821AE676740097B8A0 /* Main.storyboard */,
@@ -90,6 +95,8 @@
 		AEBB6B7C1AE676740097B8A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AED96A6A1AE9550900D1AA53 /* README.md */,
+				AED96A6B1AE9727000D1AA53 /* IBInspectable Demo screenshot.png */,
 				AEBB6B7D1AE676740097B8A0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBB6B811AE676740097B8A0 /* ViewController.swift in Sources */,
+				AED96A671AE9424500D1AA53 /* UIViewExtensions.swift in Sources */,
 				AEBB6B7F1AE676740097B8A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +419,7 @@
 				AEBB6B9A1AE676740097B8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEBB6B9B1AE676740097B8A0 /* Build configuration list for PBXNativeTarget "SwiftTestProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				AEBB6B9D1AE676740097B8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
